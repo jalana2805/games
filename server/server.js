@@ -157,7 +157,7 @@ app.post('/api/add_article',auth,(req,res)=>{
         });
     
         article.save((err,doc)=>{
-            if(err) res.status(400).send(err);
+            if(err) return res.status(400).send(err);
             res.status(200).send();
         })
     })
