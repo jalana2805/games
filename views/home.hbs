@@ -1,0 +1,24 @@
+<div class="container wrapper">
+
+    {{#each articles}}
+    <div class="card-panel hoverable">
+    <a href="/games/{{this._id}}">
+        <div class="item">
+            <div class="top">
+                <div class="title">{{this.title}}</div>
+            </div>
+            <img class="thumbnail" src="/images/{{this.img}}" alt="">
+            <div class="content">
+                {{this.review}}
+            </div>
+            <div class="bottom">
+                <div class="rating">
+                    <span>Rating:</span>{{this.rating}}/10
+                </div>
+            </div>
+        </div>
+    </a>
+</div>
+    {{/each}}
+
+</div>
